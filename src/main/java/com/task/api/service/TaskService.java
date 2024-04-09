@@ -54,6 +54,15 @@ public class TaskService {
     }
 
     /**
+     * Delete task
+     *
+     * @param taskId task id to delete
+     */
+    public void deleteTaskById(Long taskId) {
+        taskRepo.deleteById(taskId);
+    }
+
+    /**
      * Get task by is ID
      *
      * @param taskID task id
